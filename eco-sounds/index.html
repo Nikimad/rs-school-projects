@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eco-sounds</title>
+        <link rel=icon href='./assets/favicon.ico' sizes="50x50" type="image/png">
+        <link href="./style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <logo class="logo active" data-bird="forest"></logo>
+                <nav class="nav-container">
+                    <ul class="nav-list">
+                        <li class="nav-item" data-bird="solovey">Соловей</li>
+                        <li class="nav-item" data-bird="drozd">Дрозд</li>
+                        <li class="nav-item" data-bird="zarynka">Зарянка</li>
+                        <li class="nav-item" data-bird="javoronok">Жаворонок</li>
+                        <li class="nav-item" data-bird="slavka">Славка</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="bg">
+            <div class="play-btn-container">
+                <audio src="./assets/audio/forest.mp3" class="audio"></audio>
+                <button class="play-btn"></button>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <p class="data"><span>©</span><span>2022</span><a class="github-link" href="https://github.com/Nikimad">Nikimad</a></p>
+                <a class="school-link" href="https://rs.school/js-stage0/"></a>
+            </div>
+        </footer>
+        <script type='module' src="./index.js"></script>
+    </body>
+</html>

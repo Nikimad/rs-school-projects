@@ -1,0 +1,131 @@
+body {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    max-height: 100vh;
+}
+
+.active {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.bg {
+    background-image: url('./assets/img/forest.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    padding: 0 20px;
+    height: 60px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.logo {
+    background: url('./assets/svg/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    transition: 0.3s;
+}
+
+.nav-container {
+    margin-left: auto;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    color: #bdae82;
+    transition: 0.3s;
+}
+
+.play-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+    min-height: 280px;
+}
+
+.play-btn {
+    background-image: url('./assets/svg/play.svg');
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.play-btn.pause {
+    background-image: url('./assets/svg/pause.svg');
+}
+
+.play-btn:hover {
+    filter: sepia(40%);
+    width: 155px;
+    height: 155px;
+    transition: 0.3s;
+}
+
+.play-btn:active {
+    width: 140px;
+    height: 140px;
+    transition: 0.1s;
+}
+
+.data {
+    display: flex;
+    column-gap: 10px;
+}
+
+.school-link {
+    background-image: url('./assets/svg/rss.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60px;
+    width: 100px;
+    margin-left: auto;
+}
+
+.school-link:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    transition: 0.3s;
+}
+
+.github-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.github-link:hover {
+    color: #bdae82;
+    transition: 0.3s;
+}
