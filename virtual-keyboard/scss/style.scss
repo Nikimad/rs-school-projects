@@ -1,0 +1,141 @@
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mybad {
+    display: flex;
+    flex-direction: column
+}
+
+.body {
+    @extend %flex-center;
+    flex-direction: column;
+
+    min-height: 100vh;
+    margin: 0;
+
+    .info {
+        display: flex;
+        font-size: 30px;
+        .indicator {
+            margin-left: auto;
+        }
+    }
+
+    .container {
+        .monitor {
+            resize: none;
+            width: 100%;
+            min-height: 300px;
+        }
+        .keyboard {
+            display: grid;
+            grid-template-columns: repeat(15, 1fr);
+            grid-template-rows: repeat(8, 70px);
+            gap: 10px;
+
+            .key {
+              padding: 5px;
+              background-color: #000;
+              border-radius: 3px;
+              cursor: pointer;
+
+              &.color {
+                  background-color: rgb(98, 91, 91);
+              }
+              
+              &.active {
+                  transform: scale(0.95);
+              }
+
+              &-body {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                & > * {
+                    justify-self: center;
+                    color: #cacaca;
+                }
+                    &-main {
+                        grid-column-start: 2;
+                        grid-row-start: 2;
+
+                        color: #fff;
+                    }
+                    &-additional {
+                        grid-column-start: 3;
+                        grid-row-start: 3;
+                    }
+                    &-left {
+                        grid-column-start: 1;
+                        grid-row-start: 1;
+                    }
+                    &-right {
+                        grid-column-start: 3;
+                        grid-row-start: 1;
+                    }
+              }
+            }
+        }
+    }
+}
+
+
+#Backspace {
+    grid-column: -3 / span 4;
+}
+
+#Tab {
+    grid-column: 1 / span 2;
+}
+
+#Backslash {
+    grid-column: -2 / span 3;
+}
+
+#CapsLock {
+    grid-column: 1 / span 2;
+}
+
+#Enter {
+    grid-column: -3 / span 4;
+}
+
+#ShiftLeft {
+    grid-column: 1 / span 3;
+}
+
+#AltLeft {
+    grid-column: -2 / span 3;
+}
+
+#Space {
+    grid-row-start: 5;
+    grid-column: 1 / span 17;
+}
+
+#ArrowUp {
+    grid-column: 8 / span 1;
+}
+
+#ArrowLeft {
+    grid-row-start: 7;
+    grid-column: 7 / span 1;
+}
+
+#ArrowDown {
+    grid-row-start: 7;
+    grid-column: 8 / span 1;
+}
+
+#ArrowRight {
+    grid-row-start: 7;
+    grid-column: 9/ span 1;
+}
+
+#Delete {
+    grid-row-start: 8;
+    grid-column: 7 / span 3;
+}

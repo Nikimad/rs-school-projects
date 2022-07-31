@@ -1,0 +1,129 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mybad {
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+.body .info {
+  display: flex;
+  font-size: 30px;
+}
+.body .info .indicator {
+  margin-left: auto;
+}
+.body .container .monitor {
+  resize: none;
+  width: 100%;
+  min-height: 300px;
+}
+.body .container .keyboard {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(8, 70px);
+  gap: 10px;
+}
+.body .container .keyboard .key {
+  padding: 5px;
+  background-color: #000;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.body .container .keyboard .key.color {
+  background-color: rgb(98, 91, 91);
+}
+.body .container .keyboard .key.active {
+  transform: scale(0.95);
+}
+.body .container .keyboard .key-body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.body .container .keyboard .key-body > * {
+  justify-self: center;
+  color: #cacaca;
+}
+.body .container .keyboard .key-body-main {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  color: #fff;
+}
+.body .container .keyboard .key-body-additional {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+.body .container .keyboard .key-body-left {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+.body .container .keyboard .key-body-right {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+#Backspace {
+  grid-column: -3/span 4;
+}
+
+#Tab {
+  grid-column: 1/span 2;
+}
+
+#Backslash {
+  grid-column: -2/span 3;
+}
+
+#CapsLock {
+  grid-column: 1/span 2;
+}
+
+#Enter {
+  grid-column: -3/span 4;
+}
+
+#ShiftLeft {
+  grid-column: 1/span 3;
+}
+
+#AltLeft {
+  grid-column: -2/span 3;
+}
+
+#Space {
+  grid-row-start: 5;
+  grid-column: 1/span 17;
+}
+
+#ArrowUp {
+  grid-column: 8/span 1;
+}
+
+#ArrowLeft {
+  grid-row-start: 7;
+  grid-column: 7/span 1;
+}
+
+#ArrowDown {
+  grid-row-start: 7;
+  grid-column: 8/span 1;
+}
+
+#ArrowRight {
+  grid-row-start: 7;
+  grid-column: 9/span 1;
+}
+
+#Delete {
+  grid-row-start: 8;
+  grid-column: 7/span 3;
+}/*# sourceMappingURL=style.css.map */
