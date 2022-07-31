@@ -1,0 +1,13 @@
+.donation {
+    .container-content {
+        gap: 30px;
+        &-body {
+            max-width: 380px;
+            order: 1;
+        }
+        &-img {
+            height: 261px;
+            margin-top: 11px;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.friends {
+    .container-content {
+        flex-direction: column;
+        align-items: center;
+        &-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .title {
+                text-align: center;
+            }
+            .slider-overlay {
+                position: relative;
+
+                overflow-x: hidden;
+                .slider-container {
+                    display: flex;
+                    float: left;
+                    .slider-chunk {
+                        display: flex;
+                        flex-wrap: wrap;
+                        .card {
+                            flex: 1 1 270px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 30px;
+
+                            height: 435px;
+
+                            border-radius: 9px;
+
+                            background-color: $whiteA;
+                            transition: 0.3s;
+                            cursor: pointer;
+
+                            &-name {
+                                @include head(20px, 1.15, 0.06em);
+                                color: $grey;
+                                margin: 0;  
+                            }
+
+                            &:hover {
+                                box-shadow: 0px 2px 35px 14px #0D0D0D0A;
+
+                                .btn {
+                                    background-color: #FDDCC4;
+                                }
+                            }
+                        }
+                    }
+                    &.left {
+                        animation: slide-left 1s forwards;
+                    }
+                    &.right {
+                        animation: slide-right 1s forwards;
+                    }
+                }
+            }
+        }
+        &-btns {
+            display: flex;
+        }
+    }
+}

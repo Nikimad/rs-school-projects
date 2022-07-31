@@ -1,0 +1,49 @@
+.donation {
+    .container-content {
+        &-body {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .subtitle {
+                @include head(15px, 1.1, 0.06em);
+                color: $grey;
+                margin: 0;
+            }
+            .credit {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                background-color: $prime;
+        
+                border-radius: 9px;
+
+                width: fit-content;
+        
+                padding: 10px 15px;
+
+                transition: 0.3s;
+
+                cursor: pointer;
+
+                &:hover {
+                  background-color: #FDDCC4;
+                }
+                .icon {
+                    width: 30px;
+                    height: 23px;
+                }
+                .number {
+                    @include head(20px, 1.15, 0.06em);
+                    color: $grey;
+                    margin: 0;
+                }
+            }
+            .text {
+              font: 12px/18px 'Arial', sans-serif;
+              font-style: italic;
+              color: #B2B2B2;
+              margin: 0;
+            }
+        }
+    }
+}

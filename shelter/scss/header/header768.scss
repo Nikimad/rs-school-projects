@@ -1,0 +1,10 @@
+@media (max-width: 1279px) {
+  .header {
+    .container {    
+      &-content {
+        max-width: 1200px;      
+        padding: 30px 30px 60px;
+      }
+    }
+  }
+}

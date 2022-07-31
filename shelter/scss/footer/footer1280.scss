@@ -1,0 +1,15 @@
+.footer {
+    .container {
+        padding-top: 40px;
+        &-content {
+            column-gap: 160px;
+            grid-template-columns: 279px 302px 300px;
+            .contacts {
+                gap: 40px;
+            }
+            .adress {
+                gap: 32px;
+            }
+        }
+    }
+}

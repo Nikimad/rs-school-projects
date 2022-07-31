@@ -1,0 +1,43 @@
+@media (max-width: 1279px) {
+    .friends {
+        .container-content {
+            &-body {
+                .slider-overlay {
+                    padding: 30px 40px;
+                    max-width: 580px;
+                    height: 1365px;
+                    .slider-container {
+                        .slider-chunk {
+                            width: 580px;
+                            row-gap: 30px;
+                        }
+                    }
+                }
+            }
+            &-btns {
+                margin-top: 10px;
+            }
+        }
+    }
+    .section {
+        padding-bottom: 76px;
+    }
+
+@keyframes slide-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-620px);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-620px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+}

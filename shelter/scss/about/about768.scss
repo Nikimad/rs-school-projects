@@ -1,0 +1,14 @@
+@media (max-width: 1279px) {
+    .about {
+      .container-content {
+        gap: 80px;
+        flex-direction: column;
+        align-items: center;
+
+        &-body {
+          margin-top: 0;
+          order: 0;
+        }
+      }
+    }
+}

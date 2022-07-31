@@ -1,0 +1,31 @@
+@media (max-width: 767px) {
+    .popup {
+        &-body {
+            &-content {
+                width: 240px;
+                .btn {
+                    right: -30px;
+                }
+                .img {
+                    display: none;
+                }
+                .info {
+                    margin: 10px;
+                    width: 220px;
+                    &-name {
+                        margin: 0 0 10px 0;
+                        text-align: center;
+                    }
+                    &-type {
+                        margin: 0 0 20px 0;
+                        text-align: center;
+                    }
+                    &-description {
+                        margin: 0 0 24px 0;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@media (max-width: 1279px) {
+    .popup {
+        &-body {
+            flex-direction: column;
+            &-content {
+                gap: 11px;
+                width: 630px;
+                .img {
+                    width: 350px;
+                }
+                .info {
+                    width: 260px;
+                    &-name {
+                        margin: 10px 0 10px 0;
+                    }
+                    &-type {
+                        margin: 0 0 20px 0;
+                    }
+                    &-description {
+                        margin: 0 0 20px 0;
+                        @include head(13px, 14.3px, 0.06em);
+                    }
+                    &-list {
+                        gap: 6px;
+                       .item {
+                        @include head(15px, 16.5px, 0.06em);
+                       }
+                    }
+                }
+            }
+        }
+    }
+}

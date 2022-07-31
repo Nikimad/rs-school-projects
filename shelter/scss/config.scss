@@ -1,0 +1,75 @@
+$white: #fff;
+$whiteA: #FAFAFA;
+$prime: #F1CDB3;
+$light: #CDCDCD;
+$grey: #545454;
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../assets/fonts/Arial/Arial.ttf');
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('../assets/fonts/Georgia/Georgia.ttf');
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.body {
+    position: relative;
+    margin: 0;
+    font: 15px/1.6 "Arial", sans-serif;
+    &.disable-scroll {
+      overflow: hidden;
+    }
+}
+
+.fade {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  &.active {
+    animation: fade 0.5s forwards;
+    z-index: 1;
+  }
+}
+
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.bg-brown {
+    background: url("../assets/images/png/noise_transparent@2x.png"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.bg-light {
+  background: #F6F6F6;
+}
+
+
+
+@mixin head($size, $lh, $space) {
+  font-family: "Georgia", serif;
+  font-size: $size;
+  line-height: $lh;
+  font-weight: 400;
+  letter-spacing: $space;
+}
+
+@keyframes fade {
+  from {
+    background-color: rgba($color: #000000, $alpha: 0);
+  }
+  to {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+  }
+  
+}

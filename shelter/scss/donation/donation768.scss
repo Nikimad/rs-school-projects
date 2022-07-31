@@ -1,0 +1,14 @@
+@media (max-width: 1279px) {
+    .donation {
+        .container-content {
+            flex-direction: column;
+            align-items: center;
+            &-body {
+              order: 0;
+            }
+            &-img {
+                 margin-top: 30px;
+            }
+        }
+    }
+}

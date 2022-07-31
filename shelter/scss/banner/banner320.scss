@@ -1,0 +1,20 @@
+@media (max-width: 767px) {
+    .banner {
+        .container-content {
+            gap: 105px;
+            &-body {
+              .head {
+                @include head(25px, 32px, 0.06em);
+                text-align: center;
+              }
+              .text {
+                text-align: center;
+              }
+            }
+            &-img {
+              width: 260px;
+              height: auto;
+            }
+        }
+    }
+}

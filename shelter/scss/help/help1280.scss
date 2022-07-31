@@ -1,0 +1,20 @@
+.help {
+    .container-content {
+        &-body {
+            gap: 60px;
+            .list {
+                column-gap: 120px;
+                row-gap: 55px;
+                .item {
+                    .icon {
+                        width: 60px;
+                        height: 60px;
+                    }
+                    .name {
+                      @include head(20px, 1.15, 0.06em);
+                    }
+                }
+            }
+        }
+    }
+}

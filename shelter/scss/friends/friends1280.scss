@@ -1,0 +1,45 @@
+.friends {
+    .container-content {
+        &-body {
+            .slider-overlay {
+                max-width: 990px;
+
+                order: 2;
+
+                padding: 60px 53px;
+                .slider-container {
+                    gap: 90px;
+                    .slider-chunk {
+                        gap: 90px;
+                        justify-self: center;
+                    }
+
+                }
+            }
+            .prev {
+                order: 1;
+            }
+            .next {
+                order: 3;
+            }
+        }
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-1080px);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-1080px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

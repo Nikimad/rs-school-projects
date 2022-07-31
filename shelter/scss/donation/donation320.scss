@@ -1,0 +1,29 @@
+@media (max-width: 767px) {
+    .donation {
+        .container-content {
+            &-body {
+                max-width: 281px;
+                .title {
+                    text-align: center;
+                }
+                .subtitle {
+                    line-height: 24px;
+                    letter-spacing: 0;
+                }
+                .credit {
+                    .number {
+                        @include head(15px, 16.5px, 0.06em);
+                    }
+                }
+                .text {
+                    text-align: justify;
+                }
+            }
+            &-img {
+                margin-top: 12px;
+                width: 260px;
+                height: auto;
+            }
+        }
+    }
+}

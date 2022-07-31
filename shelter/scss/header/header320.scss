@@ -1,0 +1,43 @@
+@media (max-width: 767px) {
+    .header {
+      .container {    
+        &-content { 
+          justify-content: start;     
+          gap: 43px;
+          padding: 30px 0px 60px 10px;
+
+          &-nav {
+            position: absolute;
+            top: 0;
+            right: -320px;
+            height: 100vh;
+            align-items: center;
+            flex-direction: column;
+            
+            width: 320px;
+            padding-top: 250px;
+            
+            background-color: #292929;
+            transition: 0.5s;
+
+            &.open {
+              right: 0;
+              gap: 40px;
+            }
+
+            .item {
+                font-size: 32px;
+                line-height: 51px;
+            }
+  
+          }
+
+          &-burger {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }

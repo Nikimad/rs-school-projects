@@ -1,0 +1,79 @@
+@import './headerDefault.scss';
+@import './header1280.scss';
+@import './header768.scss';
+@import './header320.scss';
+
+.header {
+  .container {
+    &-content {
+      padding: 30px 40px;
+      &-logo {
+          .head {
+            color: $grey;
+          }
+          .caption {
+            color: $grey;
+          }
+        &.move {
+            .head {
+                color: $prime;
+              }
+              .caption {
+                color: $white;
+              }
+        }
+      }
+      &-nav {
+          .item {
+            color: $grey;
+            &:hover {
+              color: #000;
+            }
+            &.active {
+              color: #000;
+  
+              &::after {
+                background-color: $prime;
+             }
+            }
+          }
+          &.open {
+            .item {
+                color: $whiteA;
+                &:hover {
+                  color: $white;
+                }
+                &.active {
+                  color: $white;
+                }
+            }  
+          }
+        }
+      &-burger {
+          .line {
+            background-color: $prime;
+          }
+      }
+    }
+  }
+}
+
+@media (max-width: 1279px) {
+    .header {
+      .container {
+        &-content {
+          padding: 30px 30px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .header {
+      .container {
+        &-content {
+          padding: 30px 10px;
+        }
+      }
+    }
+  }

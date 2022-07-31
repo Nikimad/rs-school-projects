@@ -1,0 +1,10 @@
+@media (max-width: 767px) {
+  .container {
+      &-content {
+        padding: 0 10px;
+        .title {
+            @include head(25px, 32px, 0.06em);
+          }
+      }
+  }
+}

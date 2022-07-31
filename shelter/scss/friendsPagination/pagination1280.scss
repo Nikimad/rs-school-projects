@@ -1,0 +1,46 @@
+.friends {
+    .container-content {
+        &-body {
+            .slider-overlay {
+                padding: 60px 40px;
+                max-width: 1200px;
+                height: 895px;
+                .slider-container {
+                    gap: 40px;
+                    .slider-chunk {
+                        width: 1200px;
+                        column-gap: 40px;
+                        row-gap: 25px;
+                    }
+                    &.left {
+                        animation: slide-left 1s forwards;
+                    }
+                    &.right {
+                        animation: slide-right 1s forwards;
+                    }
+                }
+            }
+        }
+        &-btns {
+            gap: 20px;
+        }
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-1240px);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-1240px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,34 @@
+.popup {
+    &-body {
+        &-content {
+            gap: 29px;
+            width: 900px;
+            .img {
+                width: 500px;
+            }
+            .info {
+                width: 350px;
+                &-name {
+                    margin: 50px 0 10px 0;
+                    @include head(35px, 45.5px, 0.06em);
+                }
+                &-type {
+                    margin: 0 0 40px 0;
+                    @include head(20px, 23px, 0.06em);
+                }
+                &-description {
+                    margin: 0 0 40px 0;
+                    @include head(15px, 16.5px, 0.06em);
+                }
+                &-list {
+                    margin: 0;
+                    padding-left: 15px;
+                    gap: 11px;
+                   .item {
+                    @include head(15px, 16.5px, 0.06em);
+                   }
+                }
+            }
+        }
+    }
+}

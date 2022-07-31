@@ -1,0 +1,46 @@
+@media (max-width: 767px) {
+    .friends {
+        .container-content {
+            &-body {
+                .slider-overlay {
+                    padding: 42px 40px;
+                    max-width: 270px;
+                    .slider-container {
+                        .slider-chunk {
+                            width: 270px;
+                        }
+                    }
+                }
+            }
+            &-btns {
+                margin-top: 0;
+                gap: 10px;
+            }
+        }
+    }
+    .section {
+        padding-bottom: 42px;
+    }
+    .footer {
+        .container {
+            padding-top: 30px;
+        }
+    }
+    @keyframes slide-left {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-310px);
+        }
+    }
+    
+    @keyframes slide-right {
+        from {
+            transform: translateX(-310px);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+}

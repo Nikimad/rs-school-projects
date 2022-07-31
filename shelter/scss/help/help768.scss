@@ -1,0 +1,15 @@
+@media (max-width: 1279px) {
+    .help {
+        .container-content {
+            &-body {
+                .list {
+                    max-width: 630px;
+                    column-gap: 60px;
+                    .item {
+                      width: 170px;
+                    }
+                }
+            }
+        }
+    }
+  }

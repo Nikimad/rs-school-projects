@@ -1,0 +1,14 @@
+.about {
+  .container-content {
+    gap: 120px;
+    &-body {
+        gap: 25px;
+        
+        max-width: 430px;
+    
+        margin-top: 14px;
+
+        order: 1;
+    }
+  }
+}

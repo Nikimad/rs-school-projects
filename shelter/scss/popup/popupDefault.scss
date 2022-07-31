@@ -1,0 +1,67 @@
+.popup {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    &__enable {
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.5s ease 0s;
+    }
+    &-body {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+
+            background-color: $whiteA;
+            color: #000000;
+            border-radius: 9px;
+
+            .btn {
+                position: absolute;
+                top: -52px;
+                right: -42px;
+
+                background-image: url('../assets/images/png/cross.png');
+            }
+
+            .img {
+                height: auto;
+                border-radius: 9px;
+            }
+            .info {
+                &-name {
+                    @include head(35px, 45.5px, 0.06em);
+                }
+                &-type {
+                    @include head(20px, 23px, 0.06em);
+                }
+                &-list {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0;
+                   .item {
+                       .capitalize {
+                           text-transform: capitalize;
+                       }
+                       &::marker {
+                           color: $prime;
+                        }
+                   }
+                }
+            }
+
+            &-hover {
+                box-shadow: 0px 2px 35px 14px #0D0D0D0A;
+            }
+        }
+    }
+}

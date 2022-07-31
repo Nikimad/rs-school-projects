@@ -1,0 +1,25 @@
+@media (max-width: 767px) {
+    .help {
+        .container-content {
+            &-body {
+                gap: 42px;
+                .list {
+                    justify-content: start;
+                    gap: 30px;
+                    max-width: 290px;
+                    .item {
+                    gap: 20px;
+                    width: 130px;
+                    .icon {
+                        width:50px;
+                        height: 50px;
+                    }
+                    .name {
+                        @include head(15px, 17px, 0.06em);
+                    }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.btn {
+  font-family: "Georgian", serif;
+  color: #292929;
+  letter-spacing: 0.1em;
+  
+  width: fit-content;
+  
+  cursor: pointer;
+  
+  
+  transition: 0.3s;
+  
+  &:hover {
+    background-color: #FDDCC4;
+    transform: scale(1.025);
+  }
+  &:active {
+    transform: scale(1);
+  }
+  
+  &__block {
+    font-size: 17px;
+    line-height: 22px;
+  
+    border-radius: 100px;
+  
+    padding: 15px 45px;
+  }
+  
+  &__round {
+    width: 52px;
+    height: 52px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    border-radius: 100%;
+  }
+      
+  
+  &__prime {
+    background-color: $prime;
+  
+    border: none;
+  }
+  
+  &__secondary {
+    background-color: transparent;
+  
+    border: 2px solid $prime;
+  }
+
+  &__disabled {
+    border: 2px solid #CDCDCD;
+    color: #CDCDCD;
+    &:hover {
+      background-color: transparent;
+      transform: scale(1);
+    }
+  }
+}

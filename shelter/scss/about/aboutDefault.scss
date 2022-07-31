@@ -1,0 +1,13 @@
+.about {
+    .container-content {
+        &-body {
+            display: flex;
+            flex-direction: column;
+
+            .text {
+                color: #4C4C4C;
+                margin: 0;
+            }
+        }
+    }
+}

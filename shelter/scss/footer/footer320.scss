@@ -1,0 +1,35 @@
+@media (max-width: 767px) {
+    .footer {
+        .container {
+            &-content {
+                grid-template-columns: 300px;
+                grid-template-rows: 208px 223px 269px;
+
+                column-gap: 0;
+                row-gap: 40px;
+                &-body {
+                    .title {
+                        text-align: center;
+                        align-self: center;
+                        max-width: 270px;
+                    }
+                }
+                &-img {
+                    width: 260px;
+                    height: auto;
+                    grid-row: 3 / span 1;
+                }
+                .contacts {
+                    grid-row: 1 / span 1;
+                    align-items: center;
+                }
+                .adress {
+                    grid-row: 2 / span 1;
+                    gap: 40px;
+                    align-items: start;
+                }
+            }
+        }
+    }
+
+}

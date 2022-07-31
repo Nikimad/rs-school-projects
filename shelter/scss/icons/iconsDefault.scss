@@ -1,0 +1,16 @@
+$icons: 'pet-food', 'transportation', 'toys', 'bowls-and-cups', 'shampoos', 'vitamins', 'medicines', 'collars-leashes', 'sleeping-areas','credit-card', 'email', 'phone', 'pin';
+
+@mixin bgs($name) {
+  .#{$name} {
+    background-image: url("../assets/images/svg/#{$name}.svg");
+  }
+}
+
+@for $i from 10 through 13 {
+    @include bgs(nth($icons, $i));
+}
+
+.icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+}

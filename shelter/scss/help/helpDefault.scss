@@ -1,0 +1,30 @@
+.help {
+    .container-content {
+        &-body {
+            display: flex;
+            flex-direction: column;
+            .title {
+              text-align: center;
+            }
+            .list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    align-items: center;
+                    .name {
+                      text-align: center;
+                      color: $grey;
+                      margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

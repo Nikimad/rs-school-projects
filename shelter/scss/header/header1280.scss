@@ -1,0 +1,9 @@
+.header {
+  .container {
+    &-content {
+      max-width: 1200px;
+      width: 100%;
+      padding: 60px 40px;
+    }
+  }
+}
