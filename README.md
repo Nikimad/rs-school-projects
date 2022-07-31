@@ -2,7 +2,7 @@
 
 [Portfolio](https://rolling-scopes-school.github.io/nikimad-JSFEPRESCHOOL/portfolio/)
 
-- adaptive layout, 2 theme, langs: ru/en
+- 2 theme, langs: ru/en
 
 [Eco-sounds](https://rolling-scopes-school.github.io/nikimad-JSFEPRESCHOOL/eco-sounds/)
 
