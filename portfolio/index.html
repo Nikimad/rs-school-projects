@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel=icon href='./assets/img/logo.png' sizes="50x50" type="image/png">
+        <link href="./style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body data-theme="true">
+        <div class="mask"></div>
+        <div class="body-wrapper">
+        <header>
+            <div class="mask"></div>
+            <div class="container bg" data-theme="true">
+                <div class="logo" data-theme="true"></div>
+                <nav class="nav-container" data-theme="true">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#skills" class="nav-link" data-i18="skills">Skills</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link" data-i18="portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a href="#video" class="nav-link" data-i18="video">Video</a></li>
+                        <li class="nav-item"><a href="#price" class="nav-link" data-i18="price">Price</a></li>
+                        <li class="nav-item"><a href="#contacts" class="nav-link" data-i18="contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+                <button class="lang-changer" data-theme="true"> 
+                    <span class="lang en choosen">EN</span>/<span class="lang ru">RU</span>
+                </button>
+                <div class="theme-changer" data-theme="true"></div>
+                <div class="hamburger">
+                    <span class="line line1" data-theme="true"></span>
+                    <span class="line line2" data-theme="true"></span>
+                    <span class="line line3" data-theme="true"></span>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container bg" data-theme="true">
+                <section class="section-hero">
+                    <div class="content">
+                        <h1 class="name" data-i18="hero-title">Alexa Rise</h1>
+                        <p class="summary" data-i18="hero-text">Save sincere emotions,
+                            romantic feelings and
+                            happy moments of life
+                            together with professional
+                            photographer Alexa Rise</p>
+                        <button class="btn btn-gld hire" data-i18="hire" data-theme="true">Hire me</button>
+                    </div>
+                </section>
+                <section class="section-skills" id="skills">
+                    <div class="wrapper" data-theme="true">
+                        <h2 class="section-title" data-i18="skills" data-theme="true">Skills</h2>
+                    </div>
+                    <ul class="skills-list">
+                        <li class="skill">
+                            <div class="skill-logo camera"></div>
+                            <h3 class="skill-title" data-i18="skill-title-1">Digital photography</h3>
+                            <p class="skill-descript" data-i18="skill-text-1">High-quality photos
+                                in the studio and on the nature</p>
+                        </li>
+                        <li class="skill">
+                            <div class="skill-logo video"></div>
+                            <h3 class="skill-title" data-i18="skill-title-2">Video shooting</h3>
+                            <p class="skill-descript" data-i18="skill-text-2">Capture your moments
+                                so that they always stay with you</p>
+                        </li>
+                        <li class="skill">
+                            <div class="skill-logo image"></div>
+                            <h3 class="skill-title" data-i18="skill-title-3">Retouch</h3>
+                            <p class="skill-descript" data-i18="skill-text-3">I strive to make photography
+                                surpass reality</p>
+                        </li>
+                        <li class="skill">
+                            <div class="skill-logo mic"></div>
+                            <h3 class="skill-title" data-i18="skill-title-4">Audio</h3>
+                            <p class="skill-descript" data-i18="skill-text-4">Professional sounds recording
+                                for video, advertising, portfolio</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="section-portfolio" id="portfolio">
+                    <div class="wrapper" data-theme="true">
+                        <h2 class="section-title" data-i18="portfolio" data-theme="true">Portfolio</h2>
+                    </div>
+                    <div class="btns-portfolio" data-theme="true">
+                        <button class="btn btn-blc" data-season="winter" data-i18="winter">Winter</button>
+                        <button class="btn btn-blc" data-season="spring" data-i18="spring">Spring</button>
+                        <button class="btn btn-blc" data-season="summer" data-i18="summer">Summer</button>
+                        <button class="btn btn-blc active" data-season="autumn" data-i18="autumn">Autumn</button>
+                    </div>
+                    <div class="gallery">
+                        <img class="portfolio-img" src="./assets/img/autumn/1.jpg" alt="first photo">
+                        <img class="portfolio-img" src="./assets/img/autumn/2.jpg" alt="second photo">
+                        <img class="portfolio-img" src="./assets/img/autumn/3.jpg" alt="third photo">
+                        <img class="portfolio-img" src="./assets/img/autumn/4.jpg" alt="fourth photo">
+                        <img class="portfolio-img" src="./assets/img/autumn/5.jpg" alt="fifth photo">
+                        <img class="portfolio-img" src="./assets/img/autumn/6.jpg" alt="sixth photo">
+                    </div>
+                </section>
+                <section class="section-video" id="video">
+                    <div class="wrapper" data-theme="true">
+                        <h2 class="section-title" data-i18="video" data-theme="true">Video</h2>
+                    </div>
+                    <div class="video-player">
+                        <div class="video-player-pseudo-btn"></div>
+                    </div>
+                </section>
+                <section class="section-price" id="price" data-theme="true">
+                    <div class="wrapper" data-theme="true">
+                        <h2 class="section-title" data-i18="price" data-theme="true">Price</h2>
+                    </div>
+                    <ul class="price-list">
+                        <li class="price-item">
+                            <h3 class="price-title" data-i18="price-title-1">Standard</h3>
+                            <p class="price-total" data-theme="true">500 $</p>
+                            <p class="price-descript">
+                                <span class="price-descript-row" data-i18="price-description-1-span-1">One location</span>
+                                <span class="price-descript-row" data-i18="price-description-1-span-2">120 photos in color</span>
+                                <span class="price-descript-row" data-i18="price-description-1-span-3">12 photos in retouch</span>
+                                <span class="price-descript-row" data-i18="price-description-1-span-4">Readiness 2-3 weeks</span>
+                                <span class="price-descript-row" data-i18="price-description-1-span-5">Make up, visage</span>
+                            </p>
+                            <button class="btn btn-gld" data-i18="order">Order shooting</button>
+                        </li>
+                        <li class="price-item">
+                            <h3 class="price-title" data-i18="price-title-2">Premium</h3>
+                            <p class="price-total" data-theme="true">700 $</p>
+                            <p class="price-descript">
+                                <span class="price-descript-row" data-i18="price-description-2-span-1">One or two locations</span>
+                                <span class="price-descript-row" data-i18="price-description-2-span-2">200 photos in color</span>
+                                <span class="price-descript-row" data-i18="price-description-2-span-3">20 photos in retouch</span>
+                                <span class="price-descript-row" data-i18="price-description-2-span-4">Readiness 1-2 weeks</span>
+                                <span class="price-descript-row" data-i18="price-description-2-span-5">Make up, visage</span>
+                            </p>
+                            <button class="btn btn-gld" data-i18="order">Order shooting</button>
+                        </li>
+                        <li class="price-item">
+                            <h3 class="price-title" data-i18="price-title-3">Gold</h3>
+                            <p class="price-total" data-theme="true">1000 $</p>
+                            <p class="price-descript">
+                                <span class="price-descript-row" data-i18="price-description-3-span-1">Three locations or more</span>
+                                <span class="price-descript-row" data-i18="price-description-3-span-2">300 photos in color</span>
+                                <span class="price-descript-row" data-i18="price-description-3-span-3">50 photos in retouch</span>
+                                <span class="price-descript-row" data-i18="price-description-3-span-4">Readiness 1 week</span>
+                                <span class="price-descript-row" data-i18="price-description-3-span-5">Make up, visage, hairstyle</span>
+                            </p>
+                            <button class="btn btn-gld" data-i18="order">Order shooting</button>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="container bg-contacts" data-theme="true">
+                <section class="section-contacts" id="contacts">
+                    <h2 class="contacts-title" data-i18="contact-me" data-theme="true">Contact me</h2>
+                    <form class="contacts-form">
+                        <input class="email" type="email" placeholder="E-mail" data-i18="email" data-theme="true">
+                        <input  class="tel" type="tel" placeholder="Phone" data-i18="phone" data-theme="true">
+                        <textarea class="message" placeholder="Message" data-i18="message" data-theme="true"></textarea>
+                    </form>
+                    <button class="btn btn-gld contact" data-i18="send-message" data-theme="true">Send message</button>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="container footer-container" data-theme="true">
+                <div class="author">
+                    <span>©</span>
+                    <p class="year">2022</p>
+                    <a class="github" href="https://github.com/Nikimad">Nikimad</a>
+                </div>
+                <a  class="rs-school" href="https://rs.school/js-stage0/">Rolling Scopes School</a>
+                <ul class="socials-list">
+                    <li class="socials-item"><a href="#" class="socials-link inst" data-theme="true"></a></li>
+                    <li class="socials-item"><a href="#" class="socials-link fb" data-theme="true"></a></li>
+                    <li class="socials-item"><a href="#" class="socials-link tw" data-theme="true"></a></li>
+                    <li class="socials-item"><a href="#" class="socials-link pint" data-theme="true"></a></li>
+                </ul>
+            </div>
+        </footer>
+        </div>
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>
